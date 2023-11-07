@@ -1,0 +1,39 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    margin:0px;
+    /*line-height: 6%;*/
+}
+h2{
+    position: relative;
+    width:fit-content;
+    left:40%;
+    color:green;
+}
+h5, p{
+    position: relative;
+    left:42%;
+    width:fit-content;
+}
+.numbersEnter{
+    position: relative;
+    width:30%;
+    height:30px;
+    left:30%;
+    border-color: green;
+    margin-bottom:3%;
+}
+.numButton{
+    position: relative;
+    background-color: green;
+    left:30%;
+    color:white;
+    font-size: medium;
+    width:160px;
+    height: 35px;
+}
+.para{
+    margin-top:2%;
+    position: relative;
+    left:35%;
+}
