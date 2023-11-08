@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyPress Generator</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .HeadKey{
+            font-size:xx-large;
+            position: relative;
+            margin-top:10%;
+            left:40%;
+            width:350px;
+            padding:2%;
+            box-shadow: 1px 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="HeadKey">Press any key</div>
+    <div class="display" ></div>
+</body>
+<script>
+    document.body.addEventListener('keypress', e=>{
+        headkey = document.querySelector('.HeadKey');
+        display = document.querySelector('.display');
+        headkey.textContent = 'You pressed';
+        display.style.backgroundColor = 'aliceBlue';
+        display.style.padding = '3%';
+        display.style.position = 'relative';
+        display.style.left = '42%';
+        display.style.marginTop = '5%';
+        display.style.color = 'black';
+        display.style.fontSize = '60px';
+        display.style.width = '100px';
+        display.textContent = e.keyCode;
+        key = document.createElement('span');
+        key.textContent= "   "+e.key;
+        key.style.fontSize = '50px';
+        key.style.color = 'green';
+        document.querySelector('.HeadKey').appendChild(key);
+    })
+</script>
+</html>
